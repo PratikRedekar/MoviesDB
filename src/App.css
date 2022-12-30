@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,36 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background-image: url("KidDrawing-MarvelUniverse.jpg");
+}
+
+.container{
+  width: 100%;
+  margin: 1em auto;
+  /* background-color: rgb(219, 15, 134); */
+  border: 1em;
+}
+
+.grid{
+  display: grid;
+  margin-left: .5px;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 0.2em;
+  justify-content: center;
+  
+}
+
+h2{
+  background-color: antiquewhite;
 }
