@@ -19,7 +19,7 @@ const Upcoming = () => {
       <div>Upcoming</div>
       <div className='container'>
         <div className='grid'>
-          {movies.map((movieReq) => <MovieBox key={movieReq.id} {...movieReq} />)}
+          {movies.map((movieReq) )}
         </div></div>
     </>
   )
