@@ -51,7 +51,10 @@ function App() {
           </BrowserRouter> */}
         <Container fluid>
           <Navbar.Brand href="/home">MovieDB App PR</Navbar.Brand>
-          <Navbar.Brand href="/Upcoming">Trending</Navbar.Brand>
+          <div className="text-muted"  href="Upcoming.js">Upcoming</div>&nbsp
+          <div className="text-muted"  href="Upcoming.js">Top Rated</div>&nbsp
+          <div className="text-muted"  href="Upcoming.js">Popular</div>
+          
           <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
           
           
