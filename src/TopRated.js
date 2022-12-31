@@ -1,8 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 
-const API_URL = "https://api.themoviedb.org/3/movie/upcoming?api_key=cb313fb3cff02b0c9d284d5946f767ed";
-const Upcoming = () => {
+
+const API_URL = "https://api.themoviedb.org/3/movie/top_rated?api_key=cb313fb3cff02b0c9d284d5946f767ed";
+const TopRated = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Upcoming = () => {
   
   return (
     <>
-      <div>Upcoming</div>
+      <div>Top Rated</div>
       <div className='container'>
         <div className='grid'>
           {movies.map((movieReq) => <MovieBox key={movieReq.id} {...movieReq} />)}
@@ -25,4 +26,4 @@ const Upcoming = () => {
   )
 }
 
-export default Upcoming;
+export default TopRated;
